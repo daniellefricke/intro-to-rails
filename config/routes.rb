@@ -4,3 +4,12 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 end
+
+
+Rails.application.routes.draw do
+  get 'welcome/index'
+
+  resources :articles
+
+  root 'welcome#index'
+end
